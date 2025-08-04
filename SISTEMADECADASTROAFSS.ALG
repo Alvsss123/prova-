@@ -1,5 +1,5 @@
 algoritmo "SistemaDeCadastro_VisuAlg"
-// Autor: Dennis
+// Autor: Henrique
 // Data: 23/07/2025
 // Objetivo: Sistema de cadastro
 
@@ -9,7 +9,7 @@ var
    i: inteiro
 
 inicio
-   // --- ApresentaÁ„o ---
+   // --- Apresenta√ß√£o ---
    escreval("==========================")
    escreval("    SISTEMA DE CADASTRO     ")
    escreval("==========================")
@@ -19,13 +19,13 @@ inicio
    escreva("Digite seu nome completo: ")
    leia(nome)
 
-   escreva("Digite um nome de usu·rio: ")
+   escreva("Digite um nome de usu√°rio: ")
    leia(nome_usuario)
 
    escreva("Digite sua senha: ")
    leia(senha)
 
-   // --- ValidaÁ„o do E-mail ---
+   // --- Valida√ß√£o do E-mail ---
    contem_arroba <- falso
    enquanto nao contem_arroba faca
       escreva("Digite seu e-mail: ")
@@ -39,20 +39,20 @@ inicio
 
       se nao contem_arroba entao
          escreval
-         escreval("!!! ERRO: E-mail inv·lido! O e-mail precisa ter o caractere '@'.")
+         escreval("!!! ERRO: E-mail inv√°lido! O e-mail precisa ter o caractere '@'.")
          escreval
       fimse
    fimenquanto
 
-   // --- ValidaÁ„o do CPF ---
+   // --- Valida√ß√£o do CPF ---
 
    enquanto (compr(cpf) <> 11) faca
-      escreva("Digite seu CPF (apenas 11 n˙meros): ")
+      escreva("Digite seu CPF (apenas 11 n√∫meros): ")
       leia(cpf)
 
       se (compr(cpf) <> 11) entao
          escreval
-         escreval("!!! ERRO: CPF inv·lido! O CPF precisa ter EXATAMENTE 11 n˙meros.")
+         escreval("!!! ERRO: CPF inv√°lido! O CPF precisa ter EXATAMENTE 11 n√∫meros.")
          escreval
       fimse
    fimenquanto
@@ -60,11 +60,12 @@ inicio
    // Limpa a tela para mostrar o resultado final
    limpatela
 
-   // --- ExibiÁ„o dos Dados Cadastrados ---
+   // --- Exibi√ß√£o dos Dados Cadastrados ---
    escreval("  CADASTRO REALIZADO COM SUCESSO!  ")
    escreval("Nome: ", nome)
-   escreval("Nome de Usu·rio: ", nome_usuario)
+   escreval("Nome de Usu√°rio: ", nome_usuario)
    escreval("Senha: ", senha)
    escreval("E-mail: ", email)
    escreval("CPF: ", cpf)
+
 fimalgoritmo
